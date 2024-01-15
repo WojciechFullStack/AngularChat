@@ -13,5 +13,6 @@ export class LoginComponent {
 
   login() {
     // dodaj logikę logowania
+    console.log('Log begin')
   }
 }
