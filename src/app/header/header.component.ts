@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl:  '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+  styleUrls:[  '../../../node_modules/bootstrap/dist/css/bootstrap.min.css', './header.component.css']
 })
 export class HeaderComponent {
 
