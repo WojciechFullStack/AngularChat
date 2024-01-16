@@ -1,1 +1,41 @@
-<p>chat works!</p>
+
+<!-- app.component.html -->
+
+<div class="container">
+  <div class="row">
+    <!-- Lista użytkowników -->
+    <div class="col-md-3">
+      <h4>Lista użytkowników</h4>
+      <input type="text" class="form-control mb-2" placeholder="Wyszukaj użytkownika">
+      <ul class="list-group">
+        <!-- Tutaj można dynamicznie generować listę użytkowników -->
+        <li class="list-group-item">Użytkownik 1</li>
+        <li class="list-group-item">Użytkownik 2</li>
+        <!-- ... -->
+      </ul>
+    </div>
+
+    <!-- Okno czatu -->
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-header">Czat z Użytkownikiem XYZ</div>
+        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+          <!-- Poprzednie wiadomości -->
+          <div class="message">Użytkownik 1: Witaj!</div>
+          <div class="message">Użytkownik 2: Cześć!</div>
+          <!-- ... -->
+        </div>
+        <div class="card-footer">
+          <!-- Pole tekstowe do wprowadzania wiadomości -->
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Wpisz wiadomość...">
+            <div class="input-group-append">
+              <!-- Przycisk do wysyłania wiadomości -->
+              <button class="btn btn-primary">Wyślij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

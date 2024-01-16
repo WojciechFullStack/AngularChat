@@ -1,1 +1,15 @@
-<p>admins works!</p>
+<div class="container mt-4">
+  <h2>User List</h2>
+  <ul class="list-group">
+    <li *ngFor="let user of users" class="list-group-item rounded">
+      <div class="d-flex justify-content-between align-items-center">
+        <span>{{ user.name }}</span>
+        <span [ngClass]="{'text-success': user.status === 'active', 'text-danger': user.status === 'inactive'}">
+          <i class="fas fa-circle"></i> {{ user.status }}
+        </span>
+      </div>
+      <div class="small text-muted">Last active: {{ user.lastActive | date:'short' }}</div>
+      <button type="button" (click)="userClicked(user)" class="btn btn-sm btn-primary mt-2">Click me</button>
+    </li>
+  </ul>
+</div>
