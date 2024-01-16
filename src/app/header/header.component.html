@@ -1,10 +1,10 @@
 <header class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">Czat DH</a>
+    <a class="navbar-brand" (click)="navigateToChat()">Czat DH</a>
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" routerLink="/chat">Czat główny</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/users">Użytkownicy</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="/admins">Administratorzy</a></li>
+      <li class="nav-item"><a class="nav-link" (click)="navigateToChat()">Czat główny</a></li>
+      <li class="nav-item"><a class="nav-link" (click)="navigateToUsers()">Użytkownicy</a></li>
+      <li class="nav-item"><a class="nav-link" (click)="navigateToAdmins()">Administratorzy</a></li>
     </ul>
   </div>
 </header>

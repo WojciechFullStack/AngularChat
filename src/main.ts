@@ -11,7 +11,7 @@ import { Route } from '@angular/router';
 const appRoutes: Routes = [];
 // Use Route type, not Routes[]
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: ChatComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'users', component: UsersComponent },
   { path: 'admins', component: AdminsComponent },
