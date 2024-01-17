@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 60px; /* Ustaw odpowiednią wysokość stopki */
+  background-color: #f8f9fa; /* Dostosuj kolor tła według potrzeb */
+}
+/* Zwiększanie rozmiaru ikon */
+.footer i {
+  font-size: 3em; /* Zwiększ rozmiar trzykrotnie */
+}
+
+/* Zmiana koloru ikon na fioletowy */
+.footer i {
+  color: purple; /* Zmień kolor na fioletowy */
+}
+.footer .social-icon {
+  margin-right: 20px; /* Dostosuj wartość, aby uzyskać pożądany odstęp */
+}

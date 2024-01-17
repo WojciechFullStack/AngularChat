@@ -1,0 +1,14 @@
+.carouselmy {
+  display: flex;
+  overflow: hidden;
+}
+
+.carouselmy div {
+  flex: 0 0 auto;
+  margin-right: 30%; /* Odstęp między elementami */
+}
+
+.carouselmy img {
+  max-width: 80%;
+  height: auto;
+}
