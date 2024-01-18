@@ -8,6 +8,7 @@ import { ChatComponent } from './app/chat/chat.component';
 import { UsersComponent } from './app/users/users.component';
 import { AdminsComponent } from './app/admins/admins.component';
 import { Route } from '@angular/router';
+import { withFetch } from '@angular/common/http';
 const appRoutes: Routes = [];
 // Use Route type, not Routes[]
 const routes: Routes = [
@@ -25,4 +26,4 @@ const appRouter = RouterModule.forRoot(routes);
 // Bootstrap your application with the AppComponent and the configured router
 bootstrapApplication(AppComponent, {
   providers: [provideRouter(routes)]
-});
+}) .then(res => withFetch());

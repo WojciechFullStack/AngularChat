@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { InteresingComponent} from'./interesing/interesing.component';
 import { MyfooterComponent} from'./myfooter/myfooter.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
