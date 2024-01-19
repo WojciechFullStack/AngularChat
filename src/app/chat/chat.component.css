@@ -2,9 +2,7 @@
   display: flex;
 }
 
-users {
-  width: 50%;
+.frameusers {
+  height: 100% !important;
 }
-green {
-  background-color: green;
-}
+
